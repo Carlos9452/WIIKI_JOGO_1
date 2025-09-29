@@ -25,8 +25,8 @@ p {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: var(--text-dark);
-    background: linear-gradient(135deg, #f4f4f4 0%, #e2e2e2 100%);
+    color: black;
+    background: linear-gradient(#000000, #252525);
     display: flex;
     flex-direction: column;
     min-height: 0px;
@@ -197,8 +197,10 @@ main {
 
 /* Seção de Atualizações */
 .ultimas-atualizacoes {
+    margin-bottom: 10px;
+    border-bottom: 20px ;
     background: var(--card-bg);
-    border-radius: 12px;
+    border-radius: 30px;
     padding: 30px;
     transition: var(--transition);
 }
@@ -217,6 +219,7 @@ main {
 }
 
 .ultimas-atualizacoes h2::after {
+    
     content: '';
     position: absolute;
     bottom: -10px;
@@ -229,6 +232,7 @@ main {
 }
 
 .ultimas-atualizacoes article {
+    
     background: linear-gradient(to bottom, #f9f9f9, #f0f0f0);
     padding: 25px;
     border-radius: 10px;
@@ -242,6 +246,7 @@ main {
 }
 
 .ultimas-atualizacoes h3 {
+    
     color: var(--primary-dark);
     margin-bottom: 15px;
     font-size: 1.5rem;
@@ -265,7 +270,7 @@ main {
 footer {
     text-align: center;
     padding: 25px 20px;
-    background: linear-gradient(to right, var(--primary-dark), var(--primary-light));
+    background: linear-gradient(to right, black, rgb(41, 41, 41) , rgb(31, 30, 30));
     color: var(--accent);
     width: 100%;
     margin-top: auto;
@@ -277,46 +282,6 @@ footer p {
     margin: 0 auto;
     font-weight: 500;
 }
-
-/* Barra de busca premium */
-.search-container {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.search-container input {
-    padding: 12px 20px;
-    width: 350px;
-    border-radius: 50px 0 0 50px;
-    border: 2px solid var(--primary-light);
-    border-right: none;
-    font-size: 1rem;
-    outline: none;
-    transition: var(--transition);
-}
-
-.search-container input:focus {
-    border-color: var(--primary-dark);
-    box-shadow: 0 0 0 3px rgba(50, 48, 48, 0.2);
-}
-
-.search-container button {
-    padding: 12px 20px;
-    background: linear-gradient(to right, var(--primary-light), var(--primary-dark));
-    color: white;
-    border: none;
-    border-radius: 0 50px 50px 0;
-    cursor: pointer;
-    font-weight: 600;
-    transition: var(--transition);
-}
-
-.search-container button:hover {
-    background: linear-gradient(to right, var(--primary-dark), var(--primary-light));
-}
-
 /* Seção de Atualizações */
 .mecanica-box {
     background: var(--card-bg);
@@ -343,15 +308,14 @@ footer p {
     position: absolute;
     bottom: -10px;
     left: 45%;
-
     width: 80px;
     height: 4px;
-    background: linear-gradient(to right, var(--primary-dark), var(--primary-light));
+    background:white;
     border-radius: 2px;
 }
 
 .mecanica-box article {
-    background: linear-gradient(to bottom, #f9f9f9, #f0f0f0);
+    background: rgb(233, 230, 230);
     padding: 25px;
     border-radius: 10px;
     margin-top: 20px;
@@ -369,7 +333,7 @@ footer p {
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    
+
 }
 
 .mecanica-box h3 i {
